@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+
+
+    min-height: 100vh;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.wrapper {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgb(121, 112, 63);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 10px rgb(0, 0, 0, 2);
+    color: #000000;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.container {
+    height: 130vh;
+    /* Hauteur de la page en fonction de la fenêtre */
+    background-image: url("img's projet caftan ween/bg.jpg");
+    /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    /* Ajuste l'image pour couvrir tout l'espace */
+    background-position: center;
+    /* Centre l'image */
+    background-repeat: no-repeat;
+    /* Empêche la répétition */
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper h3 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #150f0f;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.input-box input::placeholder {
+    color: #110f0f;
+
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 3px;
+}
+
+.remember-forgot label input {
+    accent-color: black;
+    text-decoration: none;
+}
+
+.remember-forgot a {
+    color: black;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background-color: #EBE5DF;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #000000;
+    cursor: pointer;
+    font-size: 16px;
+    color: #020202;
+    font-weight: 600;
+}
+
+.wrapper .bttn {
+    width: 100%;
+    height: 45px;
+    background-color: #0f0d0c;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #000000;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+
+}
+
+.register-link p a {
+    color: #110d0d;
+    text-decoration: none;
+    font-family: 600;
+}
+
+.register-link p a :hover {
+    text-decoration: underline;
+}
+
+button a {
+    color: #000000;
+    font-size: 23px;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+}
+
+.menu-btn {
+    color: #EBE5DF;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.box {
+    box-shadow: 10px;
+    border-radius: 5%;
+
+}
+
+header {
+    background-color: #EBE5DF;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 999;
+    box-shadow: 0 0 23px rgb(0, 0, 0);
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+
+
+}
+
+.navbar .menu li a {
+    display: block;
+    margin-left: 20px;
+    color: #030202;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-size: bold;
+}
+
+.navbar .menu li a i {
+    color: #2d4b72;
+}
+
+.navbar .menu .active {
+    border: 4px solid rgb(121, 112, 63);
+}
+
+.navbar .menu li a:hover {
+    border-bottom: 4px solid rgb(0, 0, 0);
+}
+
+.footer-container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    margin: 15px;
+    flex-basis: 30%;
+}
+
+footer {
+    background-color: #EBE5DF;
+    float: top;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 0.5rem 2rem rgb(56, 51, 51);
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom {
+    background-color: #020202;
+    padding: 15px 0;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-container {
+    flex-direction: column;
+    text-align: center;
+}

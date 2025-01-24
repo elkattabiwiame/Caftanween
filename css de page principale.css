@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100%;
+}
+
+.logo {
+  width: 300px;
+  height: 100px;
+}
+
+.container {
+  height: 130vh;
+  /* Hauteur de la page en fonction de la fenêtre */
+  background-image: url("img's projet caftan ween/background.jpg");
+  /* Remplacez par le chemin de votre image */
+  background-size: cover;
+  /* Ajuste l'image pour couvrir tout l'espace */
+  background-position: center;
+  /* Centre l'image */
+  background-repeat: no-repeat;
+  /* Empêche la répétition */
+}
+
+.text-overlay {
+  text-align: center;
+  position: relative;
+  top: 70%;
+  transform: translateY(-50%);
+
+}
+
+.text-overlay h1 {
+  color: #352002;
+  font-size: 37px;
+
+
+}
+
+.text-overlay h3 {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+.text-overlay button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  border-radius: 5%;
+  background: #EBE5DF;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  border: #000000;
+  cursor: pointer;
+  /*cursor changer de effet*/
+}
+
+.button a {
+  color: rgb(72, 64, 42);
+  text-decoration: none;
+  /* annuler l effet de LIEN  button*/
+
+}
+
+/* About propose */
+.about {
+  padding: 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #b08c5a;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+/* Section Galerie */
+.gallery {
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  color: #b08c5a;
+  margin-bottom: 20px;
+}
+
+.gallery p {
+  font-size: larger;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Conteneur */
+.gallery-container {
+  display: flex;
+
+  flex-direction: column;
+  /* Colonne pour chaque vidéo */
+  gap: 60px;
+  /* Espacement entre les vidéos */
+}
+
+/* Vidéo et description en ligne */
+.video-item {
+  display: flex;
+  align-items: center;
+  /* Aligner le texte verticalement avec la vidéo */
+  text-align: left;
+  gap: 40px;
+  /* Espacement entre la vidéo et le texte */
+}
+
+.video-item video {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+
+
+/*header*/
+
+header {
+  background-color: #EBE5DF;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 999;
+  box-shadow: 0 0 23px rgb(0, 0, 0);
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+
+}
+
+.navbar .menu li a {
+  display: block;
+  margin-left: 20px;
+  color: #030202;
+  border-bottom: 4px solid transparent;
+  text-decoration: none;
+  font-size: 20px;
+  font-size: bold;
+}
+
+.navbar .menu li a i {
+  color: #2d4b72;
+}
+
+.navbar .menu .active {
+  border: 4px solid rgb(121, 112, 63);
+}
+
+.navbar .menu li a:hover {
+  border-bottom: 4px solid rgb(0, 0, 0);
+
+}
+
+/*FOOTER CODE*/
+
+footer {
+  background-color: #EBE5DF;
+  float: top;
+  color: #000000;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 0.5rem 2rem rgb(56, 51, 51);
+}
+
+.footer-container {
+
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  margin: 15px;
+  flex-basis: 30%;
+
+
+}
+
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+
+
+}
+
+.footer-bottom {
+  background-color: #333;
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+  flex-direction: column;
+  text-align: center;
+}

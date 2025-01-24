@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/*header code*/
+header {
+    background-color: #EBE5DF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 999;
+    box-shadow: 0 0 23px rgb(0, 0, 0);
+}
+
+/*logo de site web*/
+.logo {
+    width: 300px;
+    height: 100px;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+
+
+}
+
+.navbar .menu li a {
+    display: block;
+    margin-left: 20px;
+    color: #030202;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-size: bold;
+
+
+}
+
+.navbar .menu li a i {
+    color: #2d4b72;
+}
+
+.navbar .menu .active {
+    border: 4px solid rgb(121, 112, 63);
+}
+
+.navbar .menu li a:hover {
+    border-bottom: 4px solid rgb(0, 0, 0);
+
+}
+
+.menu-btn {
+    color: #ffffff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/*header code*/
+
+/*nav menu   code */
+.product-menu {
+    background-color: #333;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.product-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-menu ul li {
+    display: inline;
+}
+
+.product-menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.product-menu ul li a:hover {
+    background-color: #555;
+}
+
+/*nav menu   code */
+
+main {
+    padding: 10px;
+    background-color: rgb(253, 252, 248);
+    margin: 10px;
+}
+
+/* card form*/
+.product-card {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*image en meme line*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    justify-content: space-around;
+
+
+}
+
+#style {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 0.8;
+    font-size:70%;
+    margin: 5px
+}
+
+/* card de image*/
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+
+}
+
+/* image n 1*/
+.image-default {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* image n 2*/
+
+.image-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    /**/
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.image-container:hover .image-default {
+    opacity: 0;
+    /*   une image par défaut 1  */
+}
+
+.image-container:hover .image-hover {
+    opacity: 1;
+    /*afficher image 2*/
+}
+
+
+
+.product-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+
+}
+
+.product-price {
+    font-size: 11px;
+    color: #555555;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+
+.product-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgb(121, 112, 63);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+
+
+}
+
+.product-button a {
+    color: rgb(226, 222, 211);
+    text-decoration: none;
+    /* annuler l effet de LIEN  button*/
+
+}
+
+
+
+.product-button:hover {
+    background-color: rgb(38, 33, 6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER CODE*/
+footer {
+    background-color: #EBE5DF;
+    float: top;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 0.5rem 2rem rgb(56, 51, 51);
+}
+
+.footer-container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    margin: 15px;
+    flex-basis: 30%;
+
+
+}
+
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+
+
+}
+
+.footer-bottom {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-container {
+    flex-direction: column;
+    text-align: center;
+}
+
+/*FOOTER CODE*/
